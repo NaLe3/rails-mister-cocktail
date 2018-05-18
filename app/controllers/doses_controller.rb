@@ -1,7 +1,8 @@
-#class DosesController < ApplicationController
-  #def new
-    #@doses = Dose.new
-  #end
+class DosesController < ApplicationController
+
+  def new
+    @doses = Dose.new
+  end
 
   #def create
     #@doses = Dose.new(ingredient_params)
@@ -11,4 +12,4 @@
   #def ingredient_params
     #return ingredient.require(:ingredient).permit(:name, :description)
   #end
-#end
+end

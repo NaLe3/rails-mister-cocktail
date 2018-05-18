@@ -1,7 +1,7 @@
 class CocktailsController < ApplicationController
 
   def index
-    @cocktails= Cocktail.all
+    @cocktail = Cocktail.all
 
   end
 
@@ -16,7 +16,7 @@ class CocktailsController < ApplicationController
   def create
     @cocktail = Cocktail.new(cocktail_params)
     @cocktail.save
-    redirect_to cocktail_path(@cocktail)
+    redirect_to cocktails_path(@cocktail)
   end
 
   private
@@ -27,14 +27,3 @@ class CocktailsController < ApplicationController
 
 end
 
-Cocktail.new()
-
-
-class Person
-  def initialize(attributes = {})
-    @name = attributes[:name]
-    @age = attributes[:age]
-  end
-end
-
-Person.new({name: 'test', age: 35})
