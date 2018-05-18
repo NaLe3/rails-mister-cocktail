@@ -14,3 +14,7 @@ ingredients.each do |ingredient|
   Ingredient.create!(name: ingredient["strIngredient1"])
 end
 
+Cocktail.create(name:"Mojito")
+Cocktail.create(name:"Rhum coca")
+Cocktail.create(name:"Moscow Mule")
+
